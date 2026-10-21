@@ -1,3 +1,7 @@
+<!-- portfolio-strip:start (brief 40) -->
+<sub>**Brendan Lynskey** · [Portfolio home](https://brendanjameslynskey.github.io/) · [Interactive sites](https://brendanjameslynskey.github.io/#sites)</sub>
+<!-- portfolio-strip:end -->
+
 # Model Context Protocol (MCP)
 
 Anthropic's open protocol for connecting LLMs to tools and data &mdash; JSON-RPC primitives, transports, server-building, security and the ecosystem.
