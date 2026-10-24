@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-concept="patchbay" lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -102,12 +102,60 @@
 <!-- portfolio-strip:start (brief 40) -->
 <style>.bl-strip{display:flex;flex-wrap:wrap;align-items:center;gap:.25rem .6rem;box-sizing:border-box;width:100%;align-self:stretch;margin:0;padding:.45rem 1rem;background:var(--bg-card,var(--surface,var(--bg2,rgba(127,127,127,.08))));border-bottom:1px solid var(--border,rgba(127,127,127,.25));color:var(--text-secondary,var(--text2,var(--fg-dim,var(--muted,inherit))));font:500 13px/1.5 var(--font-body,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif);letter-spacing:.01em;position:relative;z-index:50;text-align:left}.bl-strip b{color:var(--text-primary,var(--text,var(--fg,inherit)));font-weight:700}.bl-strip a{color:var(--text-primary,var(--text,var(--fg,inherit)));text-decoration:underline;text-decoration-color:var(--accent,currentColor);text-decoration-thickness:2px;text-underline-offset:4px;padding:.15rem 0}.bl-strip a:hover,.bl-strip a:focus-visible{text-decoration-thickness:3px}.bl-strip span{opacity:.6}</style>
 <!-- portfolio-strip:end -->
+<style id="deck-concept">
+html[data-concept=patchbay] .hero{min-height:auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);column-gap:2.75rem;align-items:start;align-content:start;justify-items:start;text-align:left;max-width:1180px;margin:0 auto;padding:2rem 1.75rem 3.5rem}
+html[data-concept=patchbay] .hero::before,html[data-concept=patchbay] .hero::after{display:none}
+html[data-concept=patchbay] .hero>*{grid-column:1;margin-left:0;margin-right:0}
+html[data-concept=patchbay] .hero .series-label{display:none}
+html[data-concept=patchbay] .pb-head{grid-column:1/-1;width:100%;display:flex;justify-content:space-between;font-family:var(--font-mono);font-size:.8rem;color:var(--text-secondary);border-bottom:1px solid var(--border);padding-bottom:.5rem;margin-bottom:2.25rem}
+html[data-concept=patchbay] .pb-head span:first-child{color:var(--text-primary)}
+html[data-concept=patchbay] .hero h1{font-size:clamp(2rem,4.3vw,3.2rem);line-height:1.08;letter-spacing:-.015em;margin-bottom:1rem}
+html[data-concept=patchbay] .hero h1 .accent{color:var(--accent)}
+html[data-concept=patchbay] .hero .subtitle{max-width:none;margin-bottom:1.5rem}
+html[data-concept=patchbay] .hero .tags{justify-content:flex-start;gap:.35rem .5rem;margin-bottom:1.25rem}
+html[data-concept=patchbay] .hero .tag{background:#e9e4d8;color:#1f1b17;border:0;border-radius:1px;padding:.08rem .45rem;font-family:var(--font-mono);font-size:.74rem;box-shadow:inset 0 -1px 0 rgba(0,0,0,.15)}
+html[data-concept=patchbay] .hero .pipeline{justify-content:flex-start;margin-bottom:0}
+html[data-concept=patchbay] .pipeline-step{background:none;border:0;border-radius:0;padding:0;color:var(--text-secondary);font-family:var(--font-mono);font-size:.78rem}
+html[data-concept=patchbay] .pb-fig{grid-column:2;grid-row:2/span 6;width:100%;margin:0}
+html[data-concept=patchbay] .pb-fig figcaption{font-size:.88rem;line-height:1.5;color:var(--text-secondary);margin-top:.5rem}
+html[data-concept=patchbay] .concept-art{display:block;width:100%;height:auto;overflow:visible}
+html[data-concept=patchbay] .concept-art .pb-panel{fill:#2b2d30;stroke:#46494d;stroke-width:1}
+html[data-concept=patchbay] .concept-art .pb-strip{fill:#e9e4d8}
+html[data-concept=patchbay] .concept-art .pb-title{font-family:var(--font-mono);font-size:8.5px;fill:#1f1b17;letter-spacing:.06em}
+html[data-concept=patchbay] .concept-art .pb-screw{fill:#8d9196}
+html[data-concept=patchbay] .concept-art .pb-jack{fill:#1a1b1d;stroke:#9aa0a6;stroke-width:1.4}
+html[data-concept=patchbay] .concept-art .pb-hole{fill:#000}
+html[data-concept=patchbay] .concept-art .pb-lab{font-family:var(--font-mono);font-size:8px;fill:#c8cbcf}
+html[data-concept=patchbay] .concept-art .pb-note{font-family:var(--font-mono);font-size:9px;fill:var(--text-secondary)}
+html[data-concept=patchbay] .concept-art .pb-cord{fill:none;stroke-width:4;stroke-linecap:round;filter:drop-shadow(0 2px 1px rgba(0,0,0,.45))}
+html[data-concept=patchbay] .concept-art .pb-plug{stroke:#111;stroke-width:1.2}
+html[data-concept=patchbay] .concept-art .pb-gate{fill:#1c2b22;stroke:#a9cf8f;stroke-width:1.4;stroke-dasharray:4 3}
+html[data-concept=patchbay] .concept-art .pc-red{stroke:#d9614c;fill:#d9614c}
+html[data-concept=patchbay] .concept-art .pc-yellow{stroke:#e2b552;fill:#e2b552}
+html[data-concept=patchbay] .concept-art .pc-blue{stroke:#5d9fd6;fill:#5d9fd6}
+html[data-concept=patchbay] .concept-art .pc-green{stroke:#7fbf6a;fill:#7fbf6a}
+html[data-concept=patchbay] .concept-art .pc-white{stroke:#e7e3da;fill:#e7e3da}
+html[data-concept=patchbay] .concept-art path.pb-cord{fill:none}
+html[data-concept=patchbay] .slide-number{font-family:var(--font-mono);font-size:.78rem;font-weight:400;color:#1f1b17;background:#e9e4d8;padding:.05rem .4rem;top:4.4rem;right:1.5rem;line-height:1.5}
+html[data-concept=patchbay] .slide h2{color:var(--text-primary);padding-right:3.5rem}
+html[data-concept=patchbay] .slide h2::after{content:'';display:block;width:4.5rem;height:4px;margin-top:.55rem;border-radius:2px;background:linear-gradient(90deg,#d9614c 0 20%,#e2b552 20% 40%,#5d9fd6 40% 60%,#7fbf6a 60% 80%,#e7e3da 80%)}
+html[data-concept=patchbay] .callout .callout-label,html[data-concept=patchbay] .metric .metric-label{text-transform:none;letter-spacing:0;font-size:.82rem}
+html[data-concept=patchbay] .callout,html[data-concept=patchbay] .diagram-grid,html[data-concept=patchbay] .canvas-wrap,html[data-concept=patchbay] .control-panel,html[data-concept=patchbay] .diagram-panel,html[data-concept=patchbay] .metric,html[data-concept=patchbay] .btn,html[data-concept=patchbay] .tag{border-radius:2px}
+@media (max-width:820px){
+ html[data-concept=patchbay] .hero{grid-template-columns:minmax(0,1fr);padding:1.25rem 1rem 2.5rem}
+ html[data-concept=patchbay] .pb-fig{grid-column:1;grid-row:auto;order:10;margin-top:1.5rem}
+}
+</style>
 </head>
 <body>
 <!-- portfolio-strip:start (brief 40) -->
 <nav class="bl-strip" aria-label="Portfolio"><b>Brendan Lynskey</b><span aria-hidden="true">·</span><a href="https://brendanjameslynskey.github.io/">Portfolio home</a><span aria-hidden="true">·</span><a href="https://brendanjameslynskey.github.io/#sites">Interactive sites</a></nav>
 <!-- portfolio-strip:end -->
 <header class="hero">
+<!-- deck-concept:start -->
+<div class="pb-head" aria-hidden="true"><span>Model Context Protocol</span><span>Index</span></div>
+<figure class="pb-fig"><svg class="concept-art" viewBox="0 0 440 300" role="img" aria-label="An MCP patch bay: host clients patched to servers" xmlns="http://www.w3.org/2000/svg"><rect class="pb-panel" x="14" y="18" width="412" height="74" rx="3"/><rect class="pb-strip" x="28" y="26" width="384" height="14" rx="1"/><text class="pb-title" x="34" y="36.5">HOST · Claude Desktop / IDE / agent</text><circle class="pb-screw" cx="20" cy="30" r="3"/><circle class="pb-screw" cx="20" cy="80" r="3"/><circle class="pb-screw" cx="420" cy="30" r="3"/><circle class="pb-screw" cx="420" cy="80" r="3"/><circle class="pb-jack" cx="52" cy="64" r="8"/><circle class="pb-hole" cx="52" cy="64" r="3.4"/><text class="pb-lab" x="52" y="86" text-anchor="middle">client 1</text><circle class="pb-jack" cx="164" cy="64" r="8"/><circle class="pb-hole" cx="164" cy="64" r="3.4"/><text class="pb-lab" x="164" y="86" text-anchor="middle">client 2</text><circle class="pb-jack" cx="276" cy="64" r="8"/><circle class="pb-hole" cx="276" cy="64" r="3.4"/><text class="pb-lab" x="276" y="86" text-anchor="middle">client 3</text><circle class="pb-jack" cx="388" cy="64" r="8"/><circle class="pb-hole" cx="388" cy="64" r="3.4"/><text class="pb-lab" x="388" y="86" text-anchor="middle">client 4</text><rect class="pb-panel" x="14" y="196" width="412" height="74" rx="3"/><rect class="pb-strip" x="28" y="204" width="384" height="14" rx="1"/><text class="pb-title" x="34" y="214.5">MCP SERVERS</text><circle class="pb-screw" cx="20" cy="208" r="3"/><circle class="pb-screw" cx="20" cy="258" r="3"/><circle class="pb-screw" cx="420" cy="208" r="3"/><circle class="pb-screw" cx="420" cy="258" r="3"/><circle class="pb-jack" cx="52" cy="242" r="8"/><circle class="pb-hole" cx="52" cy="242" r="3.4"/><text class="pb-lab" x="52" y="264" text-anchor="middle">files</text><circle class="pb-jack" cx="119.2" cy="242" r="8"/><circle class="pb-hole" cx="119.2" cy="242" r="3.4"/><text class="pb-lab" x="119.2" y="264" text-anchor="middle">GitHub</text><circle class="pb-jack" cx="186.4" cy="242" r="8"/><circle class="pb-hole" cx="186.4" cy="242" r="3.4"/><text class="pb-lab" x="186.4" y="264" text-anchor="middle">database</text><circle class="pb-jack" cx="253.6" cy="242" r="8"/><circle class="pb-hole" cx="253.6" cy="242" r="3.4"/><text class="pb-lab" x="253.6" y="264" text-anchor="middle">search</text><circle class="pb-jack" cx="320.8" cy="242" r="8"/><circle class="pb-hole" cx="320.8" cy="242" r="3.4"/><text class="pb-lab" x="320.8" y="264" text-anchor="middle">calendar</text><circle class="pb-jack" cx="388" cy="242" r="8"/><circle class="pb-hole" cx="388" cy="242" r="3.4"/><text class="pb-lab" x="388" y="264" text-anchor="middle">browser</text><path class="pb-cord pc-red" d="M52 64 C 52 282, 52 282, 52 242"/><circle class="pb-plug pc-red" cx="52" cy="64" r="5"/><circle class="pb-plug pc-red" cx="52" cy="242" r="5"/><path class="pb-cord pc-yellow" d="M164 64 C 164 282, 119.2 282, 119.2 242"/><circle class="pb-plug pc-yellow" cx="164" cy="64" r="5"/><circle class="pb-plug pc-yellow" cx="119.2" cy="242" r="5"/><path class="pb-cord pc-blue" d="M164 64 C 164 282, 186.4 282, 186.4 242"/><circle class="pb-plug pc-blue" cx="164" cy="64" r="5"/><circle class="pb-plug pc-blue" cx="186.4" cy="242" r="5"/><path class="pb-cord pc-green" d="M276 64 C 276 282, 253.6 282, 253.6 242"/><circle class="pb-plug pc-green" cx="276" cy="64" r="5"/><circle class="pb-plug pc-green" cx="253.6" cy="242" r="5"/><path class="pb-cord pc-white" d="M388 64 C 388 282, 388 282, 388 242"/><circle class="pb-plug pc-white" cx="388" cy="64" r="5"/><circle class="pb-plug pc-white" cx="388" cy="242" r="5"/><text class="pb-note" x="220" y="132" text-anchor="middle">one client per server connection, JSON-RPC on every cord</text></svg><figcaption>MCP as a patch bay: a host runs one client per connection, and any server plugs into any host.</figcaption></figure>
+<!-- deck-concept:end -->
     <div class="series-label">LLM Hub &mdash; Model Context Protocol</div>
     <h1>Model <span class="accent">Context Protocol</span></h1>
     <p class="subtitle">Anthropic's open protocol for connecting LLMs to tools and data &mdash; JSON-RPC primitives, transports, server-building, security and the ecosystem.</p>
